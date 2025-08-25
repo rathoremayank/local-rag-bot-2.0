@@ -2,25 +2,51 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Local RAG Bot</title>
+  <title>WikiBot 1.0</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🧠 Local RAG Bot</h1>
-  <div>
-    <h2>Ingest</h2>
-    <input id="docsPath" placeholder="data/docs">
-    <button onclick="ingest()">Ingest</button>
-    <pre id="ingestStatus"></pre>
+  <div class="container">
+    <!-- Welcome Banner -->
+    <header class="header">
+      <h1>🤖 Welcome to WikiBot 1.0.0</h1>
+      <p class="subtitle">Your local knowledge assistant powered by RAG + llama3 </p>
+    </header>
+
+    <!-- Chat Section -->
+    <section class="chat-section">
+      <h2>💬 Ask a Question</h2>
+      <textarea id="question" placeholder="Type your question here..."></textarea>
+      <div class="input-group">
+        <label for="topK">TopK:</label>
+        <input id="topK" type="number" value="4" min="1" placeholder="topk (default 4)">
+        <button onclick="ask()">Ask</button>
+      </div>
+      <div class="output">
+        <h3>Answer</h3>
+        <pre id="answer"></pre>
+        <h3>Sources</h3>
+        <ul id="sources"></ul>
+      </div>
+    </section>
+
+    <!-- Ingest Section -->
+    <section class="ingest-section">
+      <h2>📂 Ingest Documents</h2>
+      <input id="docsPath" placeholder="data/docs">
+      <button onclick="ingest()">Ingest</button>
+      <pre id="ingestStatus"></pre>
+    </section>
   </div>
-  <div>
-    <h2>Ask</h2>
-    <textarea id="question"></textarea>
-    <input id="topK" type="number" value="4">
-    <button onclick="ask()">Ask</button>
-    <h3>Answer</h3><pre id="answer"></pre>
-    <h3>Sources</h3><ul id="sources"></ul>
+
+
+  <!-- Footer Section -->
+  <div class="footer">
+      <h1>WikiBot 1.0.0</h1>
+      <h3>Powered by FastAPI, RAG, Ollama</h3>
   </div>
+
   <script src="script.js"></script>
+
 </body>
 </html>

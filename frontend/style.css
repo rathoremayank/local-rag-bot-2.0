@@ -1,5 +1,133 @@
-body { font-family: sans-serif; background: #0b0f14; color: #e6edf3; padding: 20px; }
-h1 { color: #4f8cff; }
-textarea, input { width: 100%; margin: 6px 0; padding: 8px; border-radius: 6px; }
-button { padding: 8px 14px; margin: 6px 0; background: #4f8cff; color: white; border: none; border-radius: 6px; cursor: pointer; }
-pre { background: #121822; padding: 10px; border-radius: 6px; }
+/* Base layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px;
+  background: #f4882a;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 1.1em;
+  color: #e5eafc;
+}
+
+
+/* Sections */
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* Inputs and Buttons */
+textarea, input {
+  width: 95%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border 0.2s ease;
+}
+
+textarea:focus, input:focus {
+  border-color: #2a6df4;
+  outline: none;
+  box-shadow: 0 0 5px rgba(42,109,244,0.2);
+}
+
+button {
+  padding: 10px 16px;
+  margin: 8px 0;
+  background: #f4882a;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #1e53c7;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-group label {
+  font-weight: normal;
+}
+
+/* Output styling */
+.output pre {
+  background: #f3f4f6;
+  color: #333;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.output ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.output ul li {
+  margin: 4px 0;
+  padding: 6px 10px;
+  background: #f3f4f6;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.output ul li:hover {
+  background: #e5eafc;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.5em;
+  color: #888;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+}

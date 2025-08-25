@@ -1,0 +1,43 @@
+body { 
+    font-family: sans-serif; 
+    background: #f9fafb;     /* light gray background */
+    color: #1e1e1e;          /* dark text */
+    padding: 20px; 
+}
+
+h1 { 
+    color: #2a6df4;          /* bright blue accent */
+}
+
+textarea, input { 
+    width: 100%; 
+    margin: 6px 0; 
+    padding: 8px; 
+    border: 1px solid #ccc;  /* subtle border */
+    border-radius: 6px; 
+    background: #ffffff;     /* white input */
+    color: #1e1e1e; 
+}
+
+button { 
+    padding: 8px 14px; 
+    margin: 6px 0; 
+    background: #2a6df4;     /* blue button */
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #1e53c7;     /* darker on hover */
+}
+
+pre { 
+    background: #f3f4f6;     /* light code block */
+    color: #333;             /* dark text inside */
+    padding: 10px; 
+    border-radius: 6px; 
+    border: 1px solid #ddd; 
+}

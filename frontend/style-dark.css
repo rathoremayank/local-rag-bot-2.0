@@ -1,0 +1,29 @@
+body { 
+    font-family: sans-serif; 
+    background: #0b0f14; 
+    color: #e6edf3; 
+    padding: 20px; 
+}
+h1 { 
+    color: #4f8cff; 
+}
+textarea, input { 
+    width: 100%; 
+    margin: 6px 0; 
+    padding: 8px; 
+    border-radius: 6px; 
+}
+button { 
+    padding: 8px 14px; 
+    margin: 6px 0; 
+    background: #4f8cff; 
+    color: white; 
+    border: none; 
+    border-radius: 
+    6px; cursor: pointer; 
+}
+pre { 
+    background: #121822; 
+    padding: 10px; 
+    border-radius: 6px; 
+}
