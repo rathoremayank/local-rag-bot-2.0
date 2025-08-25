@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python environment files
+*.egg-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# FAISS index and vector store files
+*.faiss
+*.pkl
+*.pkl.gz
+index_store/
+faiss_index/
+
+# Huggingface/transformers cache
+~/.cache/
+~/.huggingface/
+~/.local/share/huggingface/
+huggingface/
+
+# FastAPI auto-generated files
+*.db
+*.sqlite3
+
+# Test artifacts
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Uvicorn reload artifacts
+*.pid

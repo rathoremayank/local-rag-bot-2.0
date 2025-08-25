@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Local RAG Bot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧠 Local RAG Bot</h1>
+  <div>
+    <h2>Ingest</h2>
+    <input id="docsPath" placeholder="data/docs">
+    <button onclick="ingest()">Ingest</button>
+    <pre id="ingestStatus"></pre>
+  </div>
+  <div>
+    <h2>Ask</h2>
+    <textarea id="question"></textarea>
+    <input id="topK" type="number" value="4">
+    <button onclick="ask()">Ask</button>
+    <h3>Answer</h3><pre id="answer"></pre>
+    <h3>Sources</h3><ul id="sources"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
